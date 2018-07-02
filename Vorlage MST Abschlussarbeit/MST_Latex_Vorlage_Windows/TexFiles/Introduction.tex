@@ -1,0 +1,58 @@
+\chapter{Introduction}
+
+\section{CubeSat}
+A CubSat is a satellite that follows the CubSat standard. The standard was initial developed in a collaboration between  California Polytechnic State University and Stanford University with the goal of giving the scientific community affordable aces to space. 
+
+It achieves this by enforcing a strict form factor on the satellite. This gives several advantages one is that it allows for mas production of components as everybody follows the same standard. It also means that the process of finding a launch provider is a lot easier. As they all have the same form factor standardized launch interfaces have been created and even the ISS have the opportunity to launch CubSat. 
+
+The most important part of the specification is the size and weight. CubeSats can come in different size but they are all based on the 'unit' called 1U. A 1U is 10x10x10cm cube that can weigh no more than 1.33 kg. You can get different sizes by staking 1Us together. Normal sizes are 1U, 2U,3U and 6U. The limit in size and weight heavily influences the design and means you very often are working with limited battery capacity. It also affect the ADCS system as it becomes difficult to add truster and adding reaction wheels become a big cost as they take a lot of space and weight\cite{CubeSat101}.                         
+
+\section{The MOVE-II CubeSat}
+The MOVE-II CubeSat is a 1U CubeSat. It is a project at the Lehrstuhls für Raumfahrttechnik(LRT) whit support from Deutsche Luft- und Raumfahrtzentrum(DLR) and in cooperation with the Wissenschaftlichen Arbeeitsgemenschaft für Raketentechnik und Raumfahrt(WARR). 
+
+
+\ifdraft
+The MOVE-II CubeSat consists primarily of seven subsystems. 
+
+\subsubsection{Thermal}
+The Thermal subsystem is in charge of monitoring the temperature of satellite and make sure that it does not overheat. It was also a big part in the design to make sure there where no parts that is designed in such a way that they produce to much heat. 
+
+\subsubsection{Communication}
+The communication subsystem has the responsibility of the radio communication between the satellite a and the ground station. The satellite is equipped with a UHF/VHF antenna and and S-Band antenna. 
+
+\subsubsection{Computer data handler}
+works as the main      
+\fi
+
+Most of the students working on the project are volunteers. As the development face of the project is ending whit the planed launch in October the number of active students is going down but at the most there was over a 100 students working on the project. There is still a lot of work that can be done on the project, even if the satellite is launching in October. Both in therms of data analysis and future development of software as most of the software can be updated once the satellite is in orbit. 
+
+This is especially true for the ADCS as it generates a lot of sensor data and there are many parts of the software that can be improved. One of these improvements for the ADCS is to activate the extended kalam filter(EKF). The EKF was not sufficiently tested before the launch software was frozen so it is not a part of the launch. At a later time and as a part of this rapport significant effort has been put into testing the EKF so it can be implemented as soon as the projects open up for uploading new software to the satellite.               
+
+\section{Altitude determination and control system}
+The altitude determination and control system (ADCS) of a satellite has the task of determining and controlling the altitude of the satellite. For the MOVE-II mission it is required that the top panel of the satellite is pointing towards the sun. This is has two reasons. The first is that the payload requires sun pointing. The experimental solar cells positioned on the top panel require to be in the sun so their efficiency can be measured. The second reason is that the satellite has four flap panels that will be deployed after launch to a position where they creates a large area of solar cells with the top panel see figure \ref{fig:Sat_Deployed}. So to maximize this solar cells they should be facing the sun.
+
+\begin{figure}[tbp]
+	\centering
+	\includegraphics[width=\linewidth,scale=1]{./Pictures/SatelliteDeployed}
+	\caption{Rendering of the MOVE-II CubeSat with flap panels deployed}
+	\label{fig:Sat_Deployed}
+\end{figure}
+
+The ADCS is normally a complex system that can be designed in many different ways. In general on a high level the ADCS can be described as a classical control system consisting of a control component, actuator component and sensor component creating a closed loop control system. There might also be observers or estimators either to use the estimates in the controller or for simply recording the estimated position of the satellite. The normal actuators for satellites are coils interacting with the magnetic felled of the earth to create a torque see equation \ref{eq:Mag_Control} \cite{move-ii-sysdoc}, reaction whiles or thrusters. For the CubSats the most common is magnetic coils and sometimes reaction whiles. Thrusters are very rarely used. The sensor can consists of many different sensors and it is very common to combine several types of sensors. Common sensors include magnetometers to measure the magnetic felled of the earth. Light sensors often named sun sensors that measure light intensities and can be used to determine the direction of the sun. Gyroscopes to measure the rotation of the satellite. If estimators are used the sensor data is very often used in combination with models of the sun position like the SG4 and models of the magnetic felled like IGRF.                    
+
+\begin{equation}\label{eq:Mag_Control}
+	\vec{T} = \vec{M} x \vec{B}
+\end{equation}
+
+\subsection{MOVE-II ADCS architecture}
+The adcs system for MOVE-II consists of six panels see figure .. for placement in satellite. Each having a microcontroller, BMX sensor, coils and a sun sensor except for the main panel that does not have a sun sensor. The BMX sensor is a combined accelerometer, gyroscope, magnetometer and temperature sensor. The task of the microcontrollers that are not on the main panel is mainly to collect sensor data and control their respective coils. The microcontroller on the main panel also collects sensor data and controls it`s coils. In addition it is ruining the control algorithm, EKF, all the models that are required for the EKF and it communicates with the rest of the satellite. The main panel gets all the sensor data from the rest of the panels and biased on this the control algorithm calculates the appropriate current for each panel that it sent back to all the other microcontrollers.
+
+\begin{figure}[tbp]
+%	\centering
+	\begin{overpic}[]{./Pictures/ADCSPanelOverwive}
+	\put(30,50){\color{black}\rule{1pt}{30pt}}
+	\caption{The placement and name of the different panel of the ADCS}
+	\label{fig:Sat_Deployed}
+\end{figure}
+
+The ADCS has 4 modes; SLEEP, ATTDET, DETUMBL and SUN. In SLEEP the ADCS does not control anything and is only recording minimal sensor data. The ATTDET mode the ADCS calculates the attitude of the satellite with a frequency of ... it does not do any controlling. In the DETUMBL mod the goal is to detumble the satellite down to ... This mode if intended to be used after the satellite is released from the pod as it is expected to have a high velocity of ... . For this purpose the ADCS uses a bdot controller. The control law can be seen in eq ... . In the SUN mode the ADCS tries to point the top panel towards the sun. For this a spinning controller is used with a velocity of 5.7 deg/s. The control law can be seen in eq ... .                                         

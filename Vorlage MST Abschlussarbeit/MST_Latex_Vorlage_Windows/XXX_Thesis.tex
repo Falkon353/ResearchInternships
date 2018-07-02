@@ -1,0 +1,203 @@
+\newif\ifdraft
+%\drafttrue
+\draftfalse
+
+% Hauptdatei/ Steuerdatei für das gesamte Projekt
+% Nehmen Sie bitte nur Änderungen an gekennzeichneten Stellen vor.
+% Diese Stellen sind mit **manual** kenntlich gemacht.
+
+% Klassenaufruf:
+%
+% Innerhalb der eckigen Klammern können Sie durch Komma getrennt
+% nachfolgend aufgeführte Optionen in der Klasse steuern.
+% Falls keine Optionen angegeben werden, verwendet der Compiler
+% die mit * gekennzeichneten als Standard. Die Bedeutung entnehmen
+% Sie bitte dem aus diesem Projekt generierten PDF Dokument.
+%
+% OPTIONEN:
+% oneside* <-> twoside
+% onecolumn* <-> twocolumn
+% final* <-> draft
+% fleqn
+% rgbt* <-> flbt
+% en <-> de*
+% pdf* <-> nonpdf
+%
+% **manual**
+\documentclass[oneside, onecolumn, final, fleqn, rgbt, de, pdf]{MST_Latex2e_style}
+
+% Integrierte Packages
+%
+% Die folgenden Packages sind bereits fix integriert:
+% [latin1]{inputenc} - Deutsche Tastatur
+% {graphicx}         - Grafikeinbindung
+% {epsfig}           - Verwendung von eps Grafiken falls nonpdf
+% {makeidx}          - automitisierte Indexerstellung
+% {color}            - Verwendung von Farben im Text
+% {supertabular}     - Mehrseitige Tabellen
+% {rotating}         - Drehung von Objekten, Sidewaystable
+% {float}            - Fixierung von Fliessumgebungen
+% {textcase}         - Uppercase, etc.
+
+
+
+% Optionale Usepackages
+%
+% Die folgenden Packages wurden hinzugefügt,
+% da diese oft Verwendung finden. Diese können jedoch
+% mit einem Kommentarzeichen ausgeschaltet werden, da
+% User diese u.U. nicht benötigen.
+%
+% **manual**
+\usepackage{layout}             % graphische Darstellung der Abmessungen im Kapitel Abmessungen
+                                % das usepackage layout kann für die wissenschaftliche Arbeit
+                                % entfernt werden
+%
+\usepackage{booktabs}           % Besondere Tabellenumgebung wie man sie oft im modernen
+                                % Buchdruck findet
+%
+\usepackage[plainpages=false,pdftex,bookmarks,bookmarksopen,bookmarksnumbered]{hyperref} % colorlinks
+                                % Hyperref erzeugt selbständig und mit Hilfe von Steuerbefehlen im
+                                % Text ein verlinktes PDF
+%
+%   \usepackage{flafter}        % flafter = float after -> Kein Gleitobjekt vor Einbindungsstelle
+%
+%   \usepackage{amsmath}        % Erleichter die verbesserte Ausgabe bei der Verwendung mathematischer
+                                %  Formulierungen in Texten; z.B. ist split eine schöne Hilfe zur Darstellung
+                                % mehrzeiliger Formeln ohne eqnarray.
+%
+%   \usepackage{longtable}      % Tabellen können sich über Seiten fortsetzen, ohne besonderes
+                                % Einwirken durch den Benutzer, ähnlich wie supertabular.
+                                % Supertabular hat jedoch das umfangreichere Funktionsspektrum.
+%
+%
+%
+% User Usepackages
+%
+% Fügen Sie nachfolgend von Ihnen benötigte Usepackes ein.
+% \usepackage[option]{packagename}
+%
+% **manual**
+%
+%
+\usepackage{pdfpages}						% Für das Einbinden von mehrseitige pdf-Dateien
+
+\usepackage{rotating}						% Für das Rotieren von Tabellen
+
+\usepackage[bf, it, textfont=it, hang]{caption}		% Um das 'Caption' zu personalisieren
+
+\usepackage{makeidx}
+\makeindex
+% 
+
+%\usepackage[latin1]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage{ngerman}
+\usepackage[scaled]{uarial}
+\usepackage{todonotes}
+\usepackage{xcolor}
+\usepackage[percent]{overpic}
+%----------------------------------------------------------------
+% DOKUMENT ANFANG
+\begin{document}
+\pagenumbering{Alph}
+
+%  TITELSEITE EINBINDEN
+% +++++++++++++++++++++++++++++++++++++++++++++++
+
+\input{TexFiles/Titlepage}
+\pagenumbering{Roman}
+%
+% ZUSAMMENFASSUNG EINBINDEN
+% +++++++++++++++++++++++++++++++++++++++++++++++
+% Kurzfassung in Deutsch oder Englisch, maximal 650 Zeichen inkl. Leerzeichen
+\input{TexFiles/Abstract}
+%
+%
+% VORWORT: FÜR VORHERGEHENDE ERLÄUTERUNGEN UND EVTL. DANKWORTE
+% +++++++++++++++++++++++++++++++++++++++++++++++
+% Ab hier ist die Umgebung optional und dem entsprechenden Bedürfnis angepaßt einzusetzen!
+% Falls die Umgebung nicht benötigt wird, entweder mit einem Kommentarzeichen deaktivieren,
+% oder den Input löschen.
+%
+% **manual**
+%\input{Vorwort}
+%
+%
+% INHALTSVERZEICHNIS
+% +++++++++++++++++++++++++++++++++++++++++++++++
+\tableofcontents
+%
+%
+% EINLEITUNG EINBINDEN
+% +++++++++++++++++++++++++++++++++++++++++++++++
+%\setcounter{page}{1}%
+\input{TexFiles/Introduction}
+%
+%
+% HAUPTTEIL EINBINDEN
+% +++++++++++++++++++++++++++++++++++++++++++++++
+% Die Eingebundene Datei Hauptteil sollte erhalten bleiben.
+% Zum Einen können Sie dann den kompletten Hauptteil
+% auf einmal auskommentieren, wenn Sie an anderen
+% Teilen arbeiten. Ausserdem erhöht die Einbindung Ihrer
+% Kapitel in der Datei Hauptteil.tex die Übersichtlichkeit.
+% Zudem finden sich die einzelnen Einbingsstellen gut, wodurch
+% sich auch einzelne Kapitel auskommentieren lassen.
+%
+\input{TexFiles/Body}
+%
+%
+%  ANHANG
+% +++++++++++++++++++++++++++++++++++++++++++++++
+% Der Anhang wird durch die Umgebung appendix vom
+% Rest der Arbeit abgegrenzt und hat eine eigene
+% Darstellung der Überschriften und Kopfzeilen.
+% Binden Sie ihre Anhangskapitel in der Datei Anhang.tex ein.
+%
+%\begin{appendix}
+%    \input{TexFiles/Appendix}
+%\end{appendix}
+%
+% ENDE ANHANG
+%
+% FORMELZEICHEN UND EINHEITEN
+% +++++++++++++++++++++++++++++++++++++++++++++++
+%
+%\def\chaptermark#1{}
+%\mark{{}{}}   % Initialisierung der Markierungen (wirkt wie ein Reset)
+%\input{TexFiles/List-of-Symbols}
+%
+%\input{TexFiles/List-of-Abbreviations}%
+%
+% VERZEICHNIS DER VORKOMMENDEN ABBILDUNGEN
+% +++++++++++++++++++++++++++++++++++++++++++++++
+%\listoffigures
+%
+%
+% VERZEICHNIS DER VORKOMMENDEN TABELLEN
+% +++++++++++++++++++++++++++++++++++++++++++++++
+%\listoftables
+%
+%
+% LITERATURVERZEICHNIS
+% +++++++++++++++++++++++++++++++++++++++++++++++
+% Wichtig: Dieses ist immer einspaltig ausgeführt.
+\bibliographystyle{acm}
+\bibliography{DiplomaThesis-Literature}
+%
+%
+%
+% INDEX
+% +++++++++++++++++++++++++++++++++++++++++++++++
+% Hierzu muss an entsprechender Stelle im Text mit
+% \index{Bezeichnung} eine Referenz erzeugt werden
+%
+% **manual**
+%\printindex
+%
+%
+\end{document}
+% DOKUMENT ENDE
+% ----------------------------------------------------------------
+

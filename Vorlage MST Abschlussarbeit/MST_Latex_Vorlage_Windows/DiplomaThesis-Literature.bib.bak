@@ -1,0 +1,54 @@
+% Encoding: windows-1252
+
+@ARTICLE{cundiff2003cfo,
+  author = {Cundiff, Steven T. and Ye, Jun },
+  title = {{Colloquium: Femtosecond optical frequency combs}},
+  journal = {Rev. Mod. Phys.},
+  year = {2003},
+  volume = {75},
+  pages = {325--342},
+  number = {1},
+  month = {Mar},
+  abstract = {Recently there has been a remarkable synergy between the technologies
+	of precision laser stabilization and mode-locked ultrafast lasers.
+	This has resulted in control of the frequency spectrum produced by
+	mode-locked lasers, which consists of a regular comb of sharp lines.
+	Thus such a controlled mode-locked laser is a ``femtosecond optical
+	frequency comb generator.'' For a sufficiently broad comb, it is
+	possible to determine the absolute frequencies of all of the comb
+	lines. This ability has revolutionized optical frequency metrology
+	and synthesis. It has also served as the basis for the recent demonstrations
+	of atomic clocks that utilize an optical frequency transition. In
+	addition, it is having an impact on time-domain applications, including
+	synthesis of a single pulse from two independent lasers. In this
+	Colloquium, we first review the frequency-domain description of a
+	mode-locked laser and the connection between the pulse phase and
+	the frequency spectrum in order to provide a basis for understanding
+	how the absolute frequencies can be determined and controlled. Using
+	this understanding, applications in optical frequency metrology and
+	synthesis and optical atomic clocks are discussed. This is followed
+	by a brief overview of how the comb technology is affecting and will
+	affect time-domain experiments.},
+  bdsk-file-1 = {YnBsaXN0MDDUAQIDBAUGCQpYJHZlcnNpb25UJHRvcFkkYXJjaGl2ZXJYJG9iamVjdHMSAAGGoNEHCFRyb290gAFfEA9OU0tleWVkQXJjaGl2ZXKoCwwXGBkdJCVVJG51bGzTDQ4PEBEUViRjbGFzc1dOUy5rZXlzWk5TLm9iamVjdHOAB6ISE4ACgAOiFRaABIAGWWFsaWFzRGF0YVxyZWxhdGl2ZVBhdGjSDRobHFdOUy5kYXRhgAVPEQI4AAAAAAI4AAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADD42MaSCsAAAAXkLofQ29sbG9xdWl1bSAtIEZlbXRvc2UjMTc5MEJELnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeQvcVAOxgAAAAAAAAAAAABAAIAAAkgAAAAAAAAAAAAAAAAAAAACkxpdGVyYXR1cmUAEAAIAADD41UKAAAAEQAIAADFQC0IAAAAAQAUABeQugAR4AAADNm4AAqkTQAAetwAAgBcTWFjaW50b3NoIEhEOlVzZXJzOmRhbmllbGRvcmlnbzpXb3JrOkRpcGxvbWFyYmVpdDpMaXRlcmF0dXJlOkNvbGxvcXVpdW0gLSBGZW10b3NlIzE3OTBCRC5wZGYADgBqADQAQwBvAGwAbABvAHEAdQBpAHUAbQAgAC0AIABGAGUAbQB0AG8AcwBlAGMAbwBuAGQAIABvAHAAdABpAGMAYQBsACAAZgByAGUAcQB1AGUAbgBjAHkAIABjAG8AbQBiAHMALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAGRVc2Vycy9kYW5pZWxkb3JpZ28vV29yay9EaXBsb21hcmJlaXQvTGl0ZXJhdHVyZS9Db2xsb3F1aXVtIC0gRmVtdG9zZWNvbmQgb3B0aWNhbCBmcmVxdWVuY3kgY29tYnMucGRmABMAAS8AABUAAgAT//8AANIeHyAhWCRjbGFzc2VzWiRjbGFzc25hbWWjISIjXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBCLi4vTGl0ZXJhdHVyZS9Db2xsb3F1aXVtIC0gRmVtdG9zZWNvbmQgb3B0aWNhbCBmcmVxdWVuY3kgY29tYnMucGRm0h4fJieiJyNcTlNEaWN0aW9uYXJ5AAgAEQAaAB8AKQAyADcAOgA/AEEAUwBcAGIAaQBwAHgAgwCFAIgAigCMAI8AkQCTAJ0AqgCvALcAuQL1AvoDAwMOAxIDIAMnAzADdQN6A30AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAADig==},
+  bdsk-url-1 = {http://dx.doi.org/10.1103/RevModPhys.75.325},
+  date-modified = {2009-02-09 14:34:50 +0100},
+  doi = {10.1103/RevModPhys.75.325},
+  numpages = {17},
+  owner = {dod},
+  publisher = {American Physical Society},
+  timestamp = {2008.11.12}
+}
+
+@Booklet{CubeSat101,
+  title  = {CubeSat101 Basic Concepts and Processes for First-Time CubeSat Developers},
+  author = {{NASA CubeSat Launch Initiative}},
+  month  = oct,
+  year   = {2017},
+  url    = {https://www.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf},
+}
+
+@TechReport{move-ii-sysdoc,
+  author = {Martin Langer, Florian Schummer, Sebastian Rücker, Daniel Vogel, Alexander Lill, Tejas Kale, Lucas Krempel, Jonis Kiesbye, Patrick Lux, David Meßmann},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
