@@ -3,44 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: XXX_Thesis.aux
 The style file: acm.bst
 Database file #1: DiplomaThesis-Literature.bib
-You've used 2 entries,
+Warning--entry type for "IGRF" isn't style-file defined
+--line 251 of file DiplomaThesis-Literature.bib
+Warning--to sort, need author or key in IGRF
+Warning--empty institution in SGM4
+You've used 14 entries,
             2253 wiz_defined-function locations,
-            541 strings with 4180 characters,
-and the built_in function-call counts, 532 in all, are:
-= -- 51
-> -- 19
+            610 strings with 6091 characters,
+and the built_in function-call counts, 3657 in all, are:
+= -- 339
+> -- 202
 < -- 0
-+ -- 8
-- -- 6
-* -- 43
-:= -- 94
-add.period$ -- 5
-call.type$ -- 2
-change.case$ -- 9
++ -- 84
+- -- 70
+* -- 259
+:= -- 668
+add.period$ -- 39
+call.type$ -- 14
+change.case$ -- 79
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 18
-empty$ -- 44
-format.name$ -- 6
-if$ -- 103
+cite$ -- 16
+duplicate$ -- 130
+empty$ -- 263
+format.name$ -- 70
+if$ -- 714
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 1
-newline$ -- 12
-num.names$ -- 4
-pop$ -- 7
+int.to.str$ -- 14
+missing$ -- 7
+newline$ -- 70
+num.names$ -- 26
+pop$ -- 81
 preamble$ -- 1
-purify$ -- 7
+purify$ -- 63
 quote$ -- 0
-skip$ -- 12
+skip$ -- 77
 stack$ -- 0
-substring$ -- 35
-swap$ -- 4
+substring$ -- 113
+swap$ -- 20
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
-warning$ -- 0
-while$ -- 6
-width$ -- 3
-write$ -- 20
+type$ -- 52
+warning$ -- 2
+while$ -- 29
+width$ -- 16
+write$ -- 139
+(There were 3 warnings)
