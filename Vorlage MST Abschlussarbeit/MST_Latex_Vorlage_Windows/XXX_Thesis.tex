@@ -24,7 +24,12 @@
 % pdf* <-> nonpdf
 %
 % **manual**
-\documentclass[oneside, onecolumn, final, fleqn, rgbt, de, pdf]{MST_Latex2e_style}
+\documentclass[oneside, onecolumn, final, rgbt, en, pdf]{MST_Latex2e_style}
+%\usepackage{titlesec}
+\renewcommand{\chaptername}{}
+%\titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\Large}
+%\titleformat{\chapter}{\normalfont\huge}{\thechapter.}{20pt}{\huge\it}
+
 
 % Integrierte Packages
 %
@@ -92,11 +97,22 @@
 
 %\usepackage[latin1]{inputenc}
 %\usepackage[T1]{fontenc}
-\usepackage{ngerman}
+\usepackage[english]{babel}
+%\usepackage[british]{babel}
 \usepackage[scaled]{uarial}
 \usepackage{todonotes}
 \usepackage{xcolor}
 \usepackage[percent]{overpic}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage[nodayofweek]{datetime}
+%\longdate
+\def\today{\ifcase\month\or
+  January\or February\or March\or April\or May\or June\or
+  July\or August\or September\or October\or November\or December\fi
+  \space\nth{\number\day}, \number\year}
 %----------------------------------------------------------------
 % DOKUMENT ANFANG
 \begin{document}
@@ -197,6 +213,7 @@
 %\printindex
 %
 %
+%\cite{*}
 \end{document}
 % DOKUMENT ENDE
 % ----------------------------------------------------------------

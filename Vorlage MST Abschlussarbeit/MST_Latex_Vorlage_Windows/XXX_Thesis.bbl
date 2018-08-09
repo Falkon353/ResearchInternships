@@ -1,13 +1,78 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{cundiff2003cfo}
-{\sc Cundiff, S.~T., and Ye, J.}
-\newblock {Colloquium: Femtosecond optical frequency combs}.
-\newblock {\em Rev. Mod. Phys. 75}, 1 (Mar 2003), 325--342.
+\bibitem{IGRF}
+International geomagnetic reference field, 2014.
+
+\bibitem{UWE-3}
+{\sc Bangert, P.}
+\newblock Attitude determination system of uwe-3.
+\newblock Master's thesis, University of Würzburg, 2012.
+
+\bibitem{attdetSur}
+{\sc Crassidis, J.~L., Markley, F.~L., and Cheng, Y.}
+\newblock Survey of nonlinear attitude estimation methods.
+\newblock {\em Journal of Guidance, Control, and Dynamics 30}, 1 (jan 2007),
+  12--28.
+
+\bibitem{SGM4}
+{\sc Hoots, F.~R., and Roehrich, R.~L.}
+\newblock Models for propagation of norad element sets.
+\newblock Tech. rep., 1980.
+
+\bibitem{aausatMasterThisis}
+{\sc Jensen, K.~F., and Vinther, K.}
+\newblock Attitude determination and control system for aausat3.
+\newblock Master's thesis, Aalborg Univerrsity, 2010.
+
+\bibitem{jkiesbyema}
+{\sc Kiesbye, J.}
+\newblock Hardware-in-the-loop verification of the distributed,
+  magnetorquer-based attitude determination \& control system of the cubesat
+  move-ii.
+\newblock mathesis, Technische Universität München, 2017.
+
+\bibitem{move-ii-sysdoc}
+{\sc Langer, M., Schummer, F., Rücker, S., Daniel~Vogel, A.~L., Kale, T.,
+  Krempel, L., Kiesbye, J., Lux, P., and Meßmann, D.}
+\newblock System documentation move-ii.
+\newblock techreport, Lehrstuhl für Raumfahrttechnik, June 2018.
+
+\bibitem{SADCS}
+{\sc Markley, F.~L., and Crassidis, J.~L.}
+\newblock {\em Fundamentals of Spacecraft Attitude Determination and Control}.
+\newblock Springer New York, 2014.
+
+\bibitem{DavidThesis}
+{\sc Meßmann, D.}
+\newblock Tempt titel.
+\newblock Master thesis, will be published in fall 2018.
+
+\bibitem{AstroPC}
+{\sc Montenbruck, O., and Pfleger, T.}
+\newblock {\em Astronomy on the Personal Computer}.
+\newblock Springer Berlin Heidelberg, 2000.
 
 \bibitem{CubeSat101}
-{\sc Initiative, N. C.~L.}
+{\sc {NASA CubeSat Launch Initiative}}.
 \newblock Cubesat101 basic concepts and processes for first-time cubesat
   developers, Oct. 2017.
+
+\bibitem{EST}
+{\sc Slavinskis, A., Ehrpais, H., Kuuste, H., Sünter, I., Viru, J., Kütt, J.,
+  Kulu, E., and Noorma, M.}
+\newblock Flight results of {ESTCube}-1 attitude determination system.
+\newblock {\em Journal of Aerospace Engineering 29}, 1 (jan 2016), 04015014.
+
+\bibitem{indirectKalman}
+{\sc Trawny, N., and Roumeliotis, S.~I.}
+\newblock Indirect kalman filter for 3d attutude estimation.
+\newblock Tech. rep., Department of Computer Science \& Engineering University
+  of Minnesota, 2005.
+
+\bibitem{aausat}
+{\sc Vinther, K.}
+\newblock Inexpensive cubesat attitude estimation using quaternions and
+  unscented kalman filtering.
+\newblock {\em Automatic Control in Aerospace 4\/} (03 2011).
 
 \end{thebibliography}

@@ -1,14 +1,26 @@
-\chapter{Sensor models}
-\label{sensorModels}
+\chapter{Sensor Models}\label{chap:Sensor_models}
+\ifdraft
+The MOVE-II CubeSat ADCS consist of three types of sensors which are all used in the EKF algorithm. It is therefore important for the EKF algorithm that the sensors function properly and are well calibrated. Therefore extensive testing of the sensors where conducted. The existing on ground calibration procedures where also tested. It is is also a need for a calibration techniques once the satellite is in space. To facilitate the development of such procedures new and more accurate models of the sensors where developed that includes the possibility to generating sensor data that is uncalibrated, so it looks similar to the data that will actually com from the sensors. This uncalibrated data can be used to test different calibration techniques. It is also important the noise levels are known as they are used in the EKF algorithm.    
 
-\section{Magnetometer}
-\subsection{Mathematical model}
-\subsection{Calibration method}
 
-\section{Gyroscope}
-\subsection{Mathematical model}
-\subsection{Calibration method}
+\section{BMX055 sensor}
+The BMX055 is sensor module featuring a multitude of sensors including temperature sensor, a three axis accelerometer, a three axis magnetometer and a three axis gyroscope. Only the magnetometer and gyroscope are used in the ADCS so only those sensors will be future explained. For a more in-depth view of the BMX055 see the datasheet {ref datasheet}.      
 
-\section{Sun sensor}
+\subsection{BMX data processing}
+The general process of gathering and processing the BMX data is shown in ... . The sensor data is first multiplied by a transformation matrix to transform the data from sensor frame to the body-fixed frame. Where the sensor frame is defined according to figure ... and the body-fixed frame has its origin at the center of mass of the satellite and the axis are parallel to the panels of the satellite. The z-axis is defined to point away from the top panel as shown in figure ... As the z-axis of the BMX055 sensor is normal to the sensor attachment and therefore normal to the side panels of the satellite. The transformation from sensor frame to body-fixed frame is therefore assumed to be a \SI{90}{\degree} rotations around the necessary axis.
+
+After the sensor data is transformed into the fixed-body frame the calibration values are applied according to \autoref{eq:calibration}. Where $v$ is the raw sensor data, $\tilde{v}$ is the calibrated sensor data, $C$ is a diagonal matrix containing the scaling factors ${C_{x},C_{y},C_{z}}$, $d$ contains the bias.   
+
+\begin{equation}\label{eq:calibration}
+	\tilde{v} = Cv + d
+\end{equation}     
+\fi
+
+
 \subsection{Mathematical model}
-\subsection{Calibration method}
+\subsection{calibration Procedure}
+
+
+\section{Sun Sensor}
+\subsection{Mathematical Model}
+\subsection{Calibration Method}

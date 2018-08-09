@@ -1,0 +1,24 @@
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 1
+\BOOKMARK [1][]{section.1.1}{1.1 CubeSat}{chapter.1}% 2
+\BOOKMARK [1][]{section.1.2}{1.2 The MOVE-II CubeSat}{chapter.1}% 3
+\BOOKMARK [1][]{section.1.3}{1.3 Attitude Determination and Control System}{chapter.1}% 4
+\BOOKMARK [2][]{subsection.1.3.1}{1.3.1 MOVE-II ADCS Architecture}{section.1.3}% 5
+\BOOKMARK [0][]{chapter.2}{2 Attitude Determination Methods}{}% 6
+\BOOKMARK [1][]{section.2.1}{2.1 Attitude Determination Methods in CubeSats}{chapter.2}% 7
+\BOOKMARK [1][]{section.2.2}{2.2 Attitude Determination on MOVE-II}{chapter.2}% 8
+\BOOKMARK [2][]{subsection.2.2.1}{2.2.1 Models Used in Attitude Determination}{section.2.2}% 9
+\BOOKMARK [2][]{subsection.2.2.2}{2.2.2 SVD-Method to Solve Wahba's problem}{section.2.2}% 10
+\BOOKMARK [2][]{subsection.2.2.3}{2.2.3 Extended Kalman Filter on MOVE-II}{section.2.2}% 11
+\BOOKMARK [0][]{chapter.3}{3 Tests}{}% 12
+\BOOKMARK [1][]{section.3.1}{3.1 Test Methods}{chapter.3}% 13
+\BOOKMARK [2][]{subsection.3.1.1}{3.1.1 Hardware-only}{section.3.1}% 14
+\BOOKMARK [2][]{subsection.3.1.2}{3.1.2 Implementation}{section.3.1}% 15
+\BOOKMARK [0][]{chapter.4}{4 Results}{}% 16
+\BOOKMARK [1][]{section.4.1}{4.1 PrintSat}{chapter.4}% 17
+\BOOKMARK [2][]{subsection.4.1.1}{4.1.1 PrintSat Algorithm Only Results}{section.4.1}% 18
+\BOOKMARK [2][]{subsection.4.1.2}{4.1.2 PrintSat Outdoor Results}{section.4.1}% 19
+\BOOKMARK [2][]{subsection.4.1.3}{4.1.3 PrintSat Reference Model Verification}{section.4.1}% 20
+\BOOKMARK [1][]{section.4.2}{4.2 Flight Model}{chapter.4}% 21
+\BOOKMARK [0][]{chapter.5}{5 Conclusion}{}% 22
+\BOOKMARK [0][]{chapter.6}{6 Outlook}{}% 23
+\BOOKMARK [0][]{chapter.6}{Bibliography}{}% 24
